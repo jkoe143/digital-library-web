@@ -13,6 +13,4 @@ React web application for managing a digital book collection with image upload a
 2. Start development server: `npm start`
 3. Open browser: `http://localhost:3000`
 
-## Backend Repository
 
-https://github.com/jkoe143/digital-library-api
