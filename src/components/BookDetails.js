@@ -39,10 +39,8 @@ const BookDetail = ({ updateBook, updateImage, getAllBooks }) => {
       formData.append("file", file, file.name);
       formData.append("id", id);
       await updateImage(formData);
-      setBook((prev) => ({
-        ...prev,
-        photoUrl: `${prev.photoUrl}?updated_at=${new Date().getTime()}`,
-      }));
+
+      await fetchBook(id);
 
       if (getAllBooks) {
         getAllBooks();
